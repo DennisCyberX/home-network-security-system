@@ -1,0 +1,15 @@
+home-network-security-system/
+├── README.md                  # Project overview and instructions
+├── firewall/                  # Firewall configuration files
+│   ├── pfsense-config.xml     # Example pfSense configuration
+│   └── firewall-rules.txt     # Firewall rules
+├── ids-ips/                   # IDS/IPS configuration files
+│   ├── snort.conf             # Snort configuration file
+│   └── suricata.yaml          # Suricata configuration file
+├── scripts/                   # Scripts for automation and testing
+│   ├── network_scan.sh        # Script to scan the network
+│   └── simulate_attacks.py    # Script to simulate attacks
+├── docs/                      # Documentation
+│   ├── setup_guide.md         # Step-by-step setup guide
+│   └── attack_simulation.md   # Guide to simulating attacks
+└── LICENSE                    # License for project
