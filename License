@@ -1,0 +1,25 @@
+
+---
+
+#### **2. Firewall Configuration (`firewall/pfsense-config.xml`)**
+Example configuration for pfSense (exported from the pfSense web interface).
+
+```xml
+<!-- Example pfSense configuration -->
+<pfsense>
+  <version>2.6.0</version>
+  <rule>
+    <type>block</type>
+    <interface>wan</interface>
+    <source>any</source>
+    <destination>any</destination>
+    <description>Block all incoming traffic by default</description>
+  </rule>
+  <rule>
+    <type>pass</type>
+    <interface>lan</interface>
+    <source>192.168.1.0/24</source>
+    <destination>any</destination>
+    <description>Allow LAN traffic</description>
+  </rule>
+</pfsense>
