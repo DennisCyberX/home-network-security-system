@@ -1,0 +1,8 @@
+#!/bin/bash
+# Network Scanner Script
+
+echo "Scanning network for connected devices..."
+nmap -sP 192.168.1.0/24
+
+echo "Scanning for open ports..."
+nmap -p 1-1000 192.168.1.1
