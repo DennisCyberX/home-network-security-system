@@ -1,0 +1,15 @@
+# simulate_attacks.py
+import nmap
+
+def simulate_port_scan(target_ip):
+    print(f"Simulating port scan on {target_ip}...")
+    scanner = nmap.PortScanner()
+    scanner.scan(target_ip, arguments='-p 1-1000')
+    for host in scanner.all_hosts():
+        print(f"Open ports on {host}:")
+        for port in scanner[host]['tcp']:
+            print(f"Port {port}: {scanner[host]['tcp'][port]['state']}")
+
+if __name__ == "__main__":
+    target_ip = "192.168.1.1"  # Replace with your target IP
+    simulate_port_scan(target_ip)
