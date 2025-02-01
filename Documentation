@@ -1,0 +1,18 @@
+# Setup Guide
+
+## 1. Configure Your Router
+- Change the default admin username and password.
+- Enable WPA3 encryption for Wi-Fi.
+- Disable remote management.
+
+## 2. Set Up a Firewall
+- Install pfSense on a dedicated device.
+- Configure firewall rules to block unnecessary traffic.
+
+## 3. Deploy IDS/IPS
+- Install Snort or Suricata on a Raspberry Pi or old PC.
+- Configure the IDS/IPS to monitor your network.
+
+## 4. Monitor and Test
+- Use Wireshark or Nagios to monitor network traffic.
+- Simulate attacks using the scripts in the `scripts/` folder.
